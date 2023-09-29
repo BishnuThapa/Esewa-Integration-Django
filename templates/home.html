@@ -6,75 +6,19 @@
     <title>Document</title>
   </head>
   <body>
-    <form
-      action="http://rc-epay.esewa.com.np/api/epay/main/v2/form"
+    <form action="https://uat.esewa.com.np/epay/main"
       method="POST"
     >
-      <input type="text" id="amount" name="amount" value="100" required />
-      <input
-        type="text"
-        id="tax_amount"
-        name="tax_amount"
-        value="10"
-        required
-      />
-      <input
-        type="text"
-        id="total_amount"
-        name="total_amount"
-        value="110"
-        required
-      />
-      <input
-        type="text"
-        id="transaction_uuid"
-        name="transaction_uuid"
-        required
-      />
-      <input
-        type="text"
-        id="product_code"
-        name="product_code"
-        value="EPAYTEST"
-        required
-      />
-      <input
-        type="text"
-        id="product_service_charge"
-        name="product_service_charge"
-        value="0"
-        required
-      />
-      <input
-        type="text"
-        id="product_delivery_charge"
-        name="product_delivery_charge"
-        value="0"
-        required
-      />
-      <input
-        type="text"
-        id="success_url"
-        name="success_url"
-        value="https://esewa.com.np"
-        required
-      />
-      <input
-        type="text"
-        id="failure_url"
-        name="failure_url"
-        value="https://google.com"
-        required
-      />
-      <input
-        type="text"
-        id="signed_field_names"
-        name="signed_field_names"
-        value="amount,total_amount,transaction_uuid,product_code"
-        required
-      />
-      <input type="text" id="signature" name="signature" " required>
-      <input value="Submit" type="submit" />
+    <input value="100" name="tAmt" type="hidden">
+    <input value="90" name="amt" type="hidden">
+    <input value="5" name="txAmt" type="hidden">
+    <input value="2" name="psc" type="hidden">
+    <input value="3" name="pdc" type="hidden">
+    <input value="EPAYTEST" name="scd" type="hidden">
+    <input value="sfjdsfkj-ffdfdddsdfkfds-fdsfjfd-dsfdsf" name="pid" type="hidden">
+    <input value="http://127.0.0.1:8000/success?q=su" type="hidden" name="su">
+    <input value="http://127.0.0.1:8000/fail?q=fu" type="hidden" name="fu">
+      <input value="Pay with ESewa" type="submit" />
     </form>
   </body>
 </html>

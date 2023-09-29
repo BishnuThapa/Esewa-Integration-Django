@@ -5,3 +5,9 @@ from django.shortcuts import render, HttpResponse
 
 def home(request):
     return render(request, 'home.html')
+
+def success(request):
+    return render(request,'success.html')
+
+def fail(request):
+    return render(request,'fail.html')

@@ -5,4 +5,6 @@ from .import views
 
 urlpatterns = [
     path('', views.home),
+    path('success', views.success),
+    path('fail', views.fail)
 ]
